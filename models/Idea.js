@@ -18,4 +18,8 @@ const IdeaSchema = new Schema({
 	}
 });
 
-mongoose.model("ideas", IdeaSchema);
+var Ideas = mongoose.model("Ideas", IdeaSchema);
+
+module.exports =  {
+	Ideas
+}

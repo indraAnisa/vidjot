@@ -4,7 +4,7 @@
   "description": "App to create video ideas",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --timeout 15000 tests/**/*.test.js"
   },
   "author": "Indra Anisa",
   "license": "ISC",
@@ -12,6 +12,12 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
     "mongoose": "^5.0.11"
+  },
+  "devDependencies": {
+    "expect": "^22.4.3",
+    "mocha": "^5.0.5",
+    "supertest": "^3.0.0"
   }
 }
