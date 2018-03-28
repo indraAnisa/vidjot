@@ -1,0 +1,12 @@
+{
+    "test":{
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://localhost:27017/vidjot-test",
+        "JWT_SECRET": "klasjdf0232093laskjf"
+    },
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://localhost:27017/vidjot-dev",
+        "JWT_SECRET": "kasd902349rksdkjlflk"
+    }
+}
